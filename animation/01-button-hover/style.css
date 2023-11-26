@@ -1,4 +1,14 @@
-#transition-container button {
+#transition-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.button {
   border-radius: 8px;
   border: none;
   background-color: #2563eb; /* Blue background */
@@ -6,9 +16,11 @@
   font-size: 18px;
   padding: 16px 24px;
   text-align: center;
-  transition: background-color 0.3s ease; /* Transition for the hover effect */
+  transition: transform 0.3s ease; /* Transition for the transform effect */
+  cursor: pointer; /* Changes cursor to indicate the button is clickable */
 }
 
-#transition-container button:hover {
-  background-color: #1e40af; /* Darker blue on hover */
+.button:hover {
+  transform: scale(1.1); /* Scales up the button to 110% of its size */
 }
+

@@ -1,23 +1,14 @@
-#transition-container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, sans-serif;
-}
-
-.button {
+#transition-container button {
   border-radius: 8px;
   border: none;
-  background-color: #2563eb;
-  color: white;
+  background-color: #2563eb; /* Blue background */
+  color: white; /* White text */
   font-size: 18px;
   padding: 16px 24px;
   text-align: center;
+  transition: background-color 0.3s ease; /* Transition for the hover effect */
 }
 
-.button:hover {
-  background-color: #1e40af;
+#transition-container button:hover {
+  background-color: #1e40af; /* Darker blue on hover */
 }

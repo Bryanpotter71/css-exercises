@@ -35,7 +35,7 @@ button {
   top: -100%; /* Start off-screen */
   left: 50%;
   transform: translate(-50%, -50%);
-  pointer-events: none;
+  pointer-events: all;
   opacity: 0;
   transition: opacity 0.3s, top 0.3s; /* Animate opacity and vertical position */
   text-align: center;
@@ -57,7 +57,7 @@ button {
   inset: 0;
   background: rgba(0, 0, 0, 0.3);
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 0.3;
 }
 
 .backdrop.show {

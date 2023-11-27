@@ -34,7 +34,7 @@ button {
   position: fixed;
   top: -100%; /* Start off-screen */
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.3s, top 0.3s; /* Animate opacity and vertical position */
@@ -42,7 +42,8 @@ button {
 }
 
 .popup-modal.show {
-  top: 50%; /* Slide into view */
+  top: 50%;  /* Slide into view */
+  left: 50%;
   opacity: 1; /* Fully visible */
 }
 
@@ -60,5 +61,5 @@ button {
 }
 
 .backdrop.show {
-  opacity: 1; /* Visible when .show is added */
+  opacity: 0.3 /* Visible when .show is added */
 }

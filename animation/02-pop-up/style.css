@@ -32,13 +32,18 @@ button {
   border: 1px solid black;
   border-radius: 10px;
   position: fixed;
-  top: 50%;
+  top: -100%; /* Start off-screen */
   left: 50%;
-  transform-origin: center;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   pointer-events: none;
-  opacity: 0%;
+  opacity: 0;
+  transition: opacity 0.3s, top 0.3s; /* Animate opacity and vertical position */
   text-align: center;
+}
+
+.popup-modal.show {
+  top: 50%; /* Slide into view */
+  opacity: 1; /* Fully visible */
 }
 
 .popup-modal p {
@@ -49,15 +54,11 @@ button {
   pointer-events: none;
   position: fixed;
   inset: 0;
-  background: #000;
-  opacity: 0%;
-}
-
-.popup-modal.show {
-  opacity: 100%;
-  pointer-events: all;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .backdrop.show {
-  opacity: 30%;
+  opacity: 1; /* Visible when .show is added */
 }

@@ -57,9 +57,9 @@ button {
   inset: 0;
   background: rgba(0, 0, 0, 0.3);
   opacity: 0;
-  transition: opacity 0.3;
+  transition: opacity 0.3s;
 }
 
 .backdrop.show {
-  opacity: 0.3 /* Visible when .show is added */
+  opacity: 0.3; /* Visible when .show is added */
 }

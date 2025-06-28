@@ -27,3 +27,21 @@ If you have suggestions to improve an exercise, ideas for a new exercise, or not
 - Unless listed in the self-check section, do not worry about getting the exact pixel value for things like margin, padding and font size. These exercises are intended to test your knowledge of CSS, not your ability to guess that a screenshot is using `font: sans-serif bold 16px` or that the margin is _exactly_ `42px`.
 - You may need to add some elements to your HTML to get things into the right spot. (For the first few exercises, we make it explicit when this needs to happen.)
 - You may need to add more selectors to your CSS file. The first few exercises have almost everything already done for you, but as you progress, you'll find that you need to add more and more selectors to get the correct result.
+
+## Extra Tool: Color Converter
+
+A small Python script named `color_converter.py` has been added to help convert colors between hexadecimal and RGB formats or generate random colors. You can run it with the following commands:
+
+```bash
+# Convert a hex value to RGB
+python3 color_converter.py --hex "#ff0000"
+
+# Convert an RGB value to hex
+python3 color_converter.py --rgb "255,0,0"
+
+# Generate a random color
+python3 color_converter.py --random
+```
+
+The script prints the result directly to the terminal.
+
